@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ManualActivity">
+        </activity>
+        <activity android:name=".AutoActivity">
+        </activity>
     </application>
 
 </manifest>

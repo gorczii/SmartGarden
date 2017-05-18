@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="pl.lodz.p.smartgarden.AutoActivity">
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentFlowerTextView" android:textSize="65sp" android:fontFamily="cursive"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginLeft="18dp" android:layout_marginStart="18dp"
+            android:layout_marginTop="44dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/imageView2"
+            android:layout_above="@+id/lightMessageTextView" android:layout_toRightOf="@+id/currentFlowerTextView"
+            android:layout_toEndOf="@+id/currentFlowerTextView" android:layout_marginBottom="50dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" android:fontFamily="cursive"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:id="@+id/waterMessageTextView"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp" android:layout_marginTop="19dp" android:layout_below="@+id/waterTextView"
+            android:layout_alignLeft="@+id/waterTextView" android:layout_alignStart="@+id/waterTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" android:fontFamily="cursive"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp" android:id="@+id/lightMessageTextView"
+            android:layout_below="@+id/lightTextView" android:layout_alignLeft="@+id/waterMessageTextView"
+            android:layout_alignStart="@+id/waterMessageTextView"/>
+    <TextView
+            android:text="@string/water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp" android:id="@+id/waterTextView"
+            android:textSize="36sp" android:textStyle="normal|bold"
+            android:fontFamily="cursive"
+            android:layout_below="@+id/lightMessageTextView" android:layout_alignLeft="@+id/currentFlowerTextView"
+            android:layout_alignStart="@+id/currentFlowerTextView"/>
+    <TextView
+            android:text="@string/light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lightTextView"
+            android:layout_marginTop="107dp"
+            android:fontFamily="cursive" android:textStyle="normal|bold" android:textAlignment="center"
+            android:textSize="36sp"
+            android:layout_below="@+id/currentFlowerTextView" android:layout_alignLeft="@+id/waterTextView"
+            android:layout_alignStart="@+id/waterTextView" android:layout_alignRight="@+id/waterTextView"
+            android:layout_alignEnd="@+id/waterTextView"/>
+
+</RelativeLayout>
+
+
